@@ -1,38 +1,66 @@
-.App {
+.App{
+  min-height: 100vh;
+ 
+}
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Blinker&display=swap');
+h1{
+  height: fit-content;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-form{
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  justify-content: right;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  transform: translate(-50px,-20px);
+}
+
+.search-bar{
+  width: 200px;
+  border: black solid;
+  padding: 10px;
+}
+
+.search-button{
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cards {
+  display: grid;
+  flex-wrap: wrap;
+  list-style: none;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards_item {
+  display: flex;
+  border-bottom: 3px solid black ;
+}
+
+.bottom{
+
+  font-size: 20px;
+  
+  text-align:center;
+  color: rgb(101, 90, 112);
+  font-family: 'Almarai', sans-serif;
+  background-color: aquamarine;
+
+}
+.headbox{
+  border: 5px solid rgb(128, 128, 128);
+  background-color: rgb(181, 246, 157);
+  width:fit-content;
+  box-shadow: 5px 5px  rgb(88, 88, 88);
+  color:black;margin: auto;
+  width: 60%;
+  padding: 10px;
 }
